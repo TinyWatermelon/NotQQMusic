@@ -28,11 +28,12 @@ namespace NotQQMuisc
         public SearchPage()
         {
             this.InitializeComponent();
-            searchresult = SearchPageitems.GetSearchPageitems(searchkey);
+            //searchresult = SearchPageitems.GetSearchPageitems(searchkey);
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             searchkey = e.Parameter as string;
+            searchresult = SearchPageitems.GetSearchPageitems(searchkey);
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)

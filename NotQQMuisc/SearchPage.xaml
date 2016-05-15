@@ -18,8 +18,8 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <StackPanel Width="500">
-                                <TextBlock Name="nameBlock" Text="{x:Bind songname}" FontSize="30" HorizontalAlignment="Right"/> 
-                                <TextBlock Name="singerBlock" Text="{x:Bind singername}" HorizontalAlignment="Right"/>
+                                <TextBlock Name="nameBlock" Text="{x:Bind songname,Mode=OneWay}" FontSize="30" HorizontalAlignment="Right"/> 
+                                <TextBlock Name="singerBlock" Text="{x:Bind singername,Mode=OneWay}" HorizontalAlignment="Right"/>
                                 <Button Name="Add" Content="添加至列表" Click="Add_Click"/>
                             </StackPanel>
                         </Grid>

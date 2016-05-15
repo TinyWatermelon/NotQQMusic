@@ -19,7 +19,7 @@ namespace NotQQMuisc
                 string json = GetJson.Getjson("https://route.showapi.com/213-1?keyword="+n+"&page=1&showapi_appid=19055&showapi_sign=7228bab0675f44c3a8bcca63296e4ca3");
                 JsonReader reader = new JsonTextReader(new StringReader(json));
                 bool isitValue = false;
-                string[] temp = new string[6];
+                string[] temp = new string[5];
                 int i = 0;
                 while (reader.Read())
                 {
@@ -32,7 +32,7 @@ namespace NotQQMuisc
                             temp[i] = reader.Value.ToString();
                             i++;
                             isitValue = false;
-                            if (i == 6)
+                            if (i == 5)
                             {
                                 collection.Add(new MusicItem
                                 {
