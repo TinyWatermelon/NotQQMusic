@@ -23,53 +23,58 @@ namespace NotQQMuisc
                 int i = 0;
                 while (reader.Read())
                 {
-                    if (isitValue)
-                    {
-                        temp[i] = reader.Value.ToString();
-                        i++;
-                        isitValue = false;
-                        if (i == 6)
-                        {
-                            collection.Add(new MusicItem
-                            {
-                                albumname = temp[0],
-                                albumpic_big = temp[1],
-                                albumpic_small = temp[2],
-                                downUrl = temp[3],
-                                singername = temp[4],
-                                songname = n
-                            });
-                            i = 0;
-                        }
-                    }
-                    else if (reader.Value.ToString() == "albumname")
-                    {
-                        isitValue = true;
+                    if (reader.Value == null)
                         continue;
-                    }
-                    else if (reader.Value.ToString() == "albumpic_big")
-                    {
-                        isitValue = true;
-                        continue;
-                    }
-                    else if (reader.Value.ToString() == "albumpic_small")
-                    {
-                        isitValue = true;
-                        continue;
-                    }
-                    else if (reader.Value.ToString() == "downUrl")
-                    {
-                        isitValue = true;
-                        continue;
-                    }
-                    else if (reader.Value.ToString() == "singername")
-                    {
-                        isitValue = true;
-                        continue;
-                    }
                     else
                     {
-                        continue;
+                        if (isitValue)
+                        {
+                            temp[i] = reader.Value.ToString();
+                            i++;
+                            isitValue = false;
+                            if (i == 6)
+                            {
+                                collection.Add(new MusicItem
+                                {
+                                    albumname = temp[0],
+                                    albumpic_big = temp[1],
+                                    albumpic_small = temp[2],
+                                    downUrl = temp[3],
+                                    singername = temp[4],
+                                    songname = n
+                                });
+                                i = 0;
+                            }
+                        }
+                        else if (reader.Value.ToString().Equals("albumname"))
+                        {
+                            isitValue = true;
+                            continue;
+                        }
+                        else if (reader.Value.ToString().Equals("albumpic_big"))
+                        {
+                            isitValue = true;
+                            continue;
+                        }
+                        else if (reader.Value.ToString().Equals("albumpic_small"))
+                        {
+                            isitValue = true;
+                            continue;
+                        }
+                        else if (reader.Value.ToString().Equals("downUrl"))
+                        {
+                            isitValue = true;
+                            continue;
+                        }
+                        else if (reader.Value.ToString().Equals("singername"))
+                        {
+                            isitValue = true;
+                            continue;
+                        }
+                        else
+                        {
+                            continue;
+                        }
                     }
                 }
             }

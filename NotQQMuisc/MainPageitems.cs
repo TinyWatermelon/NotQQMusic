@@ -24,63 +24,70 @@ namespace NotQQMuisc
                 int i = 0,j=0;
                 while (reader.Read())
                 {
-                    if(isitValue)
+                    if (reader.Value == null)
                     {
-                        temp[i] = reader.Value.ToString();
-                        i++;
-                        isitValue = false;
-                        if(i==6)
-                        {
-                            collection.Add(new MusicItem
-                            {
-                                albumpic_big = temp[0],
-                                albumpic_small = temp[1],
-                                downUrl = temp[2],
-                                seconds=temp[3],
-                                singername = temp[4],
-                                songname = temp[5]
-                            });
-                            i = 0;
-                            j++;
-                            if(j==3)
-                            {
-                                break;
-                            }
-                        }
-                    }
-                    else if (reader.Value.ToString() == "albumpic_big")
-                    {
-                        isitValue = true;
-                        continue;
-                    }
-                    else if (reader.Value.ToString() == "albumpic_small")
-                    {
-                        isitValue = true;
-                        continue;
-                    }
-                    else if (reader.Value.ToString() == "downUrl")
-                    {
-                        isitValue = true;
-                        continue;
-                    }
-                    else if (reader.Value.ToString() == "seconds")
-                    {
-                        isitValue = true;
-                        continue;
-                    }
-                    else if (reader.Value.ToString() == "singername")
-                    {
-                        isitValue = true;
-                        continue;
-                    }
-                    else if (reader.Value.ToString() == "songname")
-                    {
-                        isitValue = true;
                         continue;
                     }
                     else
-                    {
-                        continue;
+                    { 
+                        if (isitValue)
+                        {
+                            temp[i] = reader.Value.ToString();
+                            i++;
+                            isitValue = false;
+                            if (i == 6)
+                            {
+                                collection.Add(new MusicItem
+                                {
+                                    albumpic_big = temp[0],
+                                    albumpic_small = temp[1],
+                                    downUrl = temp[2],
+                                    seconds = temp[3],
+                                    singername = temp[4],
+                                    songname = temp[5]
+                                });
+                                i = 0;
+                                j++;
+                                if (j == 3)
+                                {
+                                    break;
+                                }
+                            }
+                        }
+                        else if (reader.Value.ToString().Equals("albumpic_big"))
+                        {
+                            isitValue = true;
+                            continue;
+                        }
+                        else if (reader.Value.ToString().Equals("albumpic_small"))
+                        {
+                            isitValue = true;
+                            continue;
+                        }
+                        else if (reader.Value.ToString().Equals("downUrl"))
+                        {
+                            isitValue = true;
+                            continue;
+                        }
+                        else if (reader.Value.ToString().Equals("seconds"))
+                        {
+                            isitValue = true;
+                            continue;
+                        }
+                        else if (reader.Value.ToString().Equals("singername"))
+                        {
+                            isitValue = true;
+                            continue;
+                        }
+                        else if (reader.Value.ToString().Equals("songname"))
+                        {
+                            isitValue = true;
+                            continue;
+                        }
+                        else
+                        {
+                            continue;
+                        }
                     }
                 }
             }
