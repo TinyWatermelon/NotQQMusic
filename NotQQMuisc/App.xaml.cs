@@ -36,6 +36,7 @@ namespace NotQQMuisc
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
+        public static ObservableCollection<MusicItem> MainPageItem;
         public static MusicItem CurrentMusic;
         public static ObservableCollection<MusicItem> PlayList = new ObservableCollection<MusicItem>();
 

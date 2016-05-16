@@ -28,12 +28,12 @@ namespace NotQQMuisc
     {
         private ApplicationDataContainer _appSetting;
         private const string KEY = "MusicName";
+        private static int mainpagetime = 0;
         private string fileList = "";
         public ObservableCollection<MusicItem> MainPageItem;
         public MainPage()
         {
             this.InitializeComponent();
-            MainPageItem = MainPageitems.GetMainPageitems();
             _appSetting = ApplicationData.Current.LocalSettings;
             if (_appSetting.Values.ContainsKey(KEY))
             {
@@ -43,6 +43,17 @@ namespace NotQQMuisc
             else
             {
                 _appSetting.Values.Add(KEY, fileList);
+            }
+            if(mainpagetime==0)
+            {
+                MainPageItem = MainPageitems.GetMainPageitems();
+                App.MainPageItem= MainPageItem;
+                
+                mainpagetime++;
+            }
+            else
+            {
+                MainPageItem = App.MainPageItem;
             }
         }
         private void savehistory()
@@ -93,6 +104,14 @@ namespace NotQQMuisc
             savehistory();
             Frame.Navigate(typeof(SearchPage), searchBox.Text);
             searchBox.Text = "";
+        }
+
+        private void listbox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (listbox1.SelectedItem == null)
+                return;
+            //listbox1.SelectedItem.
+            Frame.Navigate(typeof(SearchPage), listbox1.SelectedValue);
         }
     }
 }

@@ -31,20 +31,20 @@
                             <StackPanel Orientation="Horizontal">
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[0].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[0].songname,Mode=OneWay}"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[1].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[1].songname,Mode=OneWay}"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[2].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[2].songname,Mode=OneWay}"/>
                                     </StackPanel>
                                 </Grid>
                             </StackPanel>
@@ -54,20 +54,20 @@
                             <StackPanel Orientation="Horizontal" >
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[3].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[3].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[4].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[4].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[5].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[5].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                             </StackPanel>
@@ -77,20 +77,20 @@
                             <StackPanel Orientation="Horizontal" >
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[6].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[6].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[7].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[7].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[8].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[8].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                             </StackPanel>
@@ -100,20 +100,20 @@
                             <StackPanel Orientation="Horizontal" >
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[9].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[9].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[10].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[10].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[11].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[11].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                             </StackPanel>
@@ -123,20 +123,20 @@
                             <StackPanel Orientation="Horizontal" >
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[12].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[12].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[13].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[13].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[14].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[14].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                             </StackPanel>
@@ -146,20 +146,20 @@
                             <StackPanel Orientation="Horizontal" >
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[15].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[15].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[16].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[16].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[17].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[17].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                             </StackPanel>
@@ -169,20 +169,20 @@
                             <StackPanel Orientation="Horizontal" >
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[18].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[18].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[19].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[19].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[20].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[20].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                             </StackPanel>
@@ -192,20 +192,20 @@
                             <StackPanel Orientation="Horizontal" >
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[21].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[21].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[22].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[22].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[23].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[23].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                             </StackPanel>
@@ -215,20 +215,20 @@
                             <StackPanel Orientation="Horizontal" >
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[24].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[24].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[25].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[25].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                                 <Grid BorderThickness="10">
                                     <StackPanel>
-                                        <Image Source="{Binding}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding}"/>
+                                        <Image Source="{x:Bind MainPageItem[26].albumpic_small,Mode=OneWay}" Width="90" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{x:Bind MainPageItem[26].songname,Mode=OneWay}" Width="110"/>
                                     </StackPanel>
                                 </Grid>
                             </StackPanel>
@@ -239,9 +239,9 @@
                 <PivotItem Header="搜索">
                     <StackPanel>
                         <TextBlock Text="输入你想搜索的歌曲或者歌手"/>
-                        <TextBox Name="searchBox" Text=""/>
+                        <TextBox Name="searchBox" Text="" />
                         <Button Name="searchbutton" Content="搜索" Click="searchbutton_Click" HorizontalAlignment="Right" Width="150" Height="30"/>
-                        <ListBox MaxHeight="300" Name="listbox1"/>
+                        <ListBox MaxHeight="600" Name="listbox1" SelectionChanged="listbox1_SelectionChanged" />
                     </StackPanel>
                 </PivotItem>
                 <PivotItem Header="队列">
