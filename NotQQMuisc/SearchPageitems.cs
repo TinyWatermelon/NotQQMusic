@@ -18,20 +18,19 @@ namespace NotQQMuisc
             {
                 string json = GetJson.Getjson("https://route.showapi.com/213-1?keyword="+n+"&page=1&showapi_appid=19055&showapi_sign=7228bab0675f44c3a8bcca63296e4ca3");
                 JsonReader reader = new JsonTextReader(new StringReader(json));
-                bool isitValue = false;
                 string[] temp = new string[5];
-                int i = 0;
+                int i = 0,j=0;
                 while (reader.Read())
                 {
                     if (reader.Value == null)
                         continue;
                     else
                     {
-                        if (isitValue)
+                        if (j!=0)
                         {
-                            temp[i] = reader.Value.ToString();
+                            temp[j-1] = reader.Value.ToString();
                             i++;
-                            isitValue = false;
+                            j = 0;
                             if (i == 5)
                             {
                                 collection.Add(new MusicItem
@@ -48,27 +47,27 @@ namespace NotQQMuisc
                         }
                         else if (reader.Value.ToString().Equals("albumname"))
                         {
-                            isitValue = true;
+                            j = 1;
                             continue;
                         }
                         else if (reader.Value.ToString().Equals("albumpic_big"))
                         {
-                            isitValue = true;
+                            j = 2;
                             continue;
                         }
                         else if (reader.Value.ToString().Equals("albumpic_small"))
                         {
-                            isitValue = true;
+                            j = 3;
                             continue;
                         }
                         else if (reader.Value.ToString().Equals("downUrl"))
                         {
-                            isitValue = true;
+                            j = 4;
                             continue;
                         }
                         else if (reader.Value.ToString().Equals("singername"))
                         {
-                            isitValue = true;
+                            j = 5;
                             continue;
                         }
                         else
