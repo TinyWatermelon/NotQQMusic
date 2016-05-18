@@ -10,7 +10,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
             <TextBlock Text="{x:Bind searchkey}" FontSize="30" />
-            <ListView x:Name="listview1" ItemsSource="{x:Bind searchresult}">
+            <ListView x:Name="listview1" ItemsSource="{x:Bind searchresult}" SelectionChanged="listview1_SelectionChanged">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:MusicItem">
                         <Grid>
@@ -20,7 +20,7 @@
                             <StackPanel Width="500">
                                 <TextBlock Name="nameBlock" Text="{x:Bind songname,Mode=OneWay}" FontSize="30" HorizontalAlignment="Right"/> 
                                 <TextBlock Name="singerBlock" Text="{x:Bind singername,Mode=OneWay}" HorizontalAlignment="Right"/>
-                                <Button Name="Add" Content="添加至列表" Click="Add_Click"/>
+                                <!--<Button Name="Add" Content="添加至列表" Click="Add_Click"/>-->
                             </StackPanel>
                         </Grid>
                     </DataTemplate>
