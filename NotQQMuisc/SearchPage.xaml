@@ -6,26 +6,31 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Resources>
+        <Style TargetType="ListViewItem">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        </Style>
+    </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
             <TextBlock Text="{x:Bind searchkey}" FontSize="30" />
-            <ListView x:Name="listview1" ItemsSource="{x:Bind searchresult}" SelectionChanged="listview1_SelectionChanged">
-                <ListView.ItemTemplate>
-                    <DataTemplate x:DataType="local:MusicItem">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <StackPanel Width="500">
-                                <TextBlock Name="nameBlock" Text="{x:Bind songname,Mode=OneWay}" FontSize="30" HorizontalAlignment="Right"/> 
-                                <TextBlock Name="singerBlock" Text="{x:Bind singername,Mode=OneWay}" HorizontalAlignment="Right"/>
-                                <!--<Button Name="Add" Content="添加至列表" Click="Add_Click"/>-->
-                            </StackPanel>
-                        </Grid>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <ScrollViewer Height="500">
+                <ScrollViewer.Content>
+                    <ListView x:Name="listview1" ItemsSource="{x:Bind searchresult}" SelectionChanged="listview1_SelectionChanged">
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="local:MusicItem">
+                                <StackPanel BorderThickness="10">
+                                    <TextBlock Name="nameBlock" Text="{x:Bind songname,Mode=OneWay}" FontSize="30" HorizontalAlignment="Right"/>
+                                    <TextBlock Name="singerBlock" Text="{x:Bind singername,Mode=OneWay}" HorizontalAlignment="Right"/>
+                                    <!--<Button Name="Add" Content="添加至列表" Click="Add_Click"/>-->
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </ScrollViewer.Content>
+            </ScrollViewer>
+            
         </StackPanel>
     </Grid>
 </Page>
