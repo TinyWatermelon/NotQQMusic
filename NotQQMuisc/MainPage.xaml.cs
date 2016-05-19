@@ -31,6 +31,7 @@ namespace NotQQMuisc
         private static int mainpagetime = 0;
         private string fileList = "";
         public ObservableCollection<MusicItem> MainPageItem;
+        public ObservableCollection<MusicItem> PlayList = App.PlayList;
         public MainPage()
         {
             this.InitializeComponent();

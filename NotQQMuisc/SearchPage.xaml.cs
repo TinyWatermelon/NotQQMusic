@@ -36,11 +36,11 @@ namespace NotQQMuisc
             searchresult = SearchPageitems.GetSearchPageitems(searchkey);
         }
 
-        private void Add_Click(object sender, RoutedEventArgs e)
-        {
-            var seleteditem = (MusicItem)listview1.SelectedItem;
-            App.PlayList.Add(seleteditem);
-        }
+        //private void Add_Click(object sender, RoutedEventArgs e)
+        //{
+        //    var seleteditem = (MusicItem)listview1.SelectedItem;
+        //    App.PlayList.Add(seleteditem);
+        //}
 
         private void listview1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
